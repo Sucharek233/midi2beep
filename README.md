@@ -114,7 +114,7 @@ python midi2beep.py -file song.mid -export arduino -output song.ino
 # Export as Linux multi-line script without copying to clipboard
 python midi2beep.py -file song.mid -export linux -channel 2 -nocopy
 ```
-## How to play the output
+## How to play the output on a Computer
 
 ### Linux (PC speaker)
 1. Install the `beep` utility.
@@ -122,10 +122,20 @@ python midi2beep.py -file song.mid -export linux -channel 2 -nocopy
 3. Paste the generated beep sequence into the terminal.
 
 ### Windows
-1. Use [my fork](https://github.com/Sucharek233/beep-on-windows/releases) ([Download the zip directly](https://github.com/Sucharek233/beep-on-windows/releases/download/1.0/beep.zip)) of [pc-beeper](https://github.com/cocafe/pc-beeper) adapted for Linux-compatible syntax:
+1. Use [my fork](https://github.com/Sucharek233/beep-on-windows/releases) ([Download the zip directly](https://github.com/Sucharek233/beep-on-windows/releases/download/1.0/beep.zip)) of [pc-beeper](https://github.com/cocafe/pc-beeper) adapted for Linux-compatible syntax.
 2. Extract the zip file.
 3. Open a command prompt as Administrator and navigate to the extracted folder.
 4. Paste the output from this tool.
+
+---
+
+## Common Issues with Playback on a Computer
+
+### Getting no sound?
+
+* Your system likely doesn't have a physical PC speaker.
+* Most laptops use emulated beepers or none at all — and these may not produce any sound.
+* This tool **requires** access to an actual or emulated PC speaker.
 
 ---
 
