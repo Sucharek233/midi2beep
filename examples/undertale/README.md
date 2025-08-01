@@ -1,4 +1,4 @@
-# Undertale Soundtrack (Beep Conversion)
+# Undertale Soundtrack (Beep Conversion) (All files converted with v1!)
 
 A full conversion of the **Undertale OST** into PC speaker-style `beep` commands.  
 This is an automated conversion using MIDI files and has not been manually edited or cleaned up.
