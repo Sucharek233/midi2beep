@@ -39,7 +39,7 @@ pip install mido
 * Click **Browse** to choose a `.mid` file from your computer.
 
 ### 2. Set Playback Speed
-* Adjust the **Speed** slider to change playback/conversion speed (0.1× to 3.0×). Qarning! This slider is reversed! (2x is **2x slower**)
+* Adjust the **Speed** slider to change playback/conversion speed (0.1× to 3.0×). Warning! This slider is reversed! (2x is **2x slower**)
 
 ### 3. Choose a Channel
 * Use the **Channel** spinbox to target a specific MIDI channel (0–15).
@@ -72,19 +72,19 @@ python midi2beep.py -file <path_to_midi>
 
 ### Flags
 
-| Argument    | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| `-file`     | **(Required)** Path to the input `.mid` file                 |
-| `-output`   | Output file path (if omitted, result is copied to clipboard) |
-| `-speed`    | Playback speed multiplier (default: `1.0`)                   |
-| `-channel`  | MIDI channel to convert (`0 - 15`, default: `0`)             |
-| `-merge`    | Merge all channels into a single output                      |
-| `-reverse`  | Reverse channel priority (useful with `-merge`)              |
-| `-export`   | Export format (see below; default: `single`)                 |
-| `-nocopy`   | Do **not** copy output to clipboard                          |
-| `-noprint`  | Do **not** print output to stdout                            |
-| `-oldlogic` | Uses conversion logic from v1.                               |
-| `-quiet`    | Suppress all status messages                                 |
+| Argument    | Description                                                                                |
+| ----------- | -------------------------------------------------------------------------------------------|
+| `-file`     | **(Required)** Path to the input `.mid` file                                               |
+| `-output`   | Output file path (if omitted, result is copied to clipboard)                               |
+| `-speed`    | Playback speed multiplier (default: `1.0`) Warning! This is reversed! (2 is **2x slower**) |
+| `-channel`  | MIDI channel to convert (`0 - 15`, default: `0`)                                           |
+| `-merge`    | Merge all channels into a single output                                                    |
+| `-reverse`  | Reverse channel priority (useful with `-merge`)                                            |
+| `-export`   | Export format (see below; default: `single`)                                               |
+| `-nocopy`   | Do **not** copy output to clipboard                                                        |
+| `-noprint`  | Do **not** print output to stdout                                                          |
+| `-oldlogic` | Uses conversion logic from v1.                                                             |
+| `-quiet`    | Suppress all status messages                                                               |
 
 ### Export Formats
 
@@ -126,16 +126,6 @@ python midi2beep.py -file song.mid -export linux -channel 2 -nocopy
 2. Extract the zip file.
 3. Open a command prompt as Administrator and navigate to the extracted folder.
 4. Paste the output from this tool.
-
----
-
-## Common Issues
-
-### Getting no sound?
-
-* Your system likely doesn't have a physical PC speaker.
-* Most laptops use emulated beepers or none at all — and these may not produce any sound.
-* This tool **requires** access to an actual or emulated PC speaker.
 
 ---
 
